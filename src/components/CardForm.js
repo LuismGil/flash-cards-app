@@ -32,30 +32,44 @@ export function CardForm({ onSave, onCancel, card }) {
   }
 
   return (
-    <div className="tile">
-      <h4>{id ? 'Update Card' : 'Add Card'}</h4>
-      <form onReset={clearForm} onSubmit={handleSubmit}>
+    <div className="preview preview_front">
+      <h4 className="form_title">{id ? 'Update Card' : 'Add Card'}</h4>
+      <form className="form" onReset={clearForm} onSubmit={handleSubmit}>
         <div>
-          <label htmlFor={`card_term_${id ? id : 'new'}`}>term</label>
+          <label
+            className="form_text-title"
+            htmlFor={`card_term_${id ? id : 'new'}`}
+          >
+            Term
+          </label>
           <textarea
+            className="form_text"
             id={`card_term_${id ? id : 'new'}`}
             value={term}
             onChange={handleTermChange}
           />
         </div>
         <div>
-          <label htmlFor={`card_definition_${id ? id : 'new'}`}>
-            definition
+          <label
+            className="form_text-title"
+            htmlFor={`card_definition_${id ? id : 'new'}`}
+          >
+            Definition
           </label>
           <textarea
+            className="form_text"
             id={`card_definition_${id ? id : 'new'}`}
             value={definition}
             onChange={handleDefChange}
           />
         </div>
-        <div>
-          <button type="submit">save</button>
-          <button type="reset">cancel</button>
+        <div className="btn_form">
+          <button type="submit" className="btn">
+            Save
+          </button>
+          <button type="reset" className="btn">
+            Cancel
+          </button>
         </div>
       </form>
     </div>

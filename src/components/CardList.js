@@ -6,12 +6,12 @@ import { CardPreview } from './CardPreview';
 export function CardList({ cards, onAdd, onRemove, onUpdate }) {
   return (
     <div>
-      <h3>Your Cards</h3>
-      <div className="practiceCTA">
-        <Link to="/practice">practice deck</Link>
+      <div className="practiceContainer_link">
+        <Link className="practiceContainer_link-title" to="/practice">
+          Practice Deck
+        </Link>
       </div>
-
-      <div className="gridContainer">
+      <div>
         <CardForm onSave={onAdd} />
         {cards.map(card => (
           <CardPreview

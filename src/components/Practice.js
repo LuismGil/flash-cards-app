@@ -34,34 +34,32 @@ export class Practice extends Component {
 
     return (
       <div className="practiceContainer">
-        <h3>Practice</h3>
-        <div className="progress">
+        <h3 className="practiceContainer_title">Practice</h3>
+        <div className="practiceContainer_progress">
           {currentIndex + 1}/{cards.length}
         </div>
-        <div className="card">
-          <div className="practiceTerm">{isFront ? term : definition}</div>
-          <div className="practiceButtons">
-            <button
-              type="button"
-              className="tertiary"
-              onClick={this.handleCardFlip}
-            >
-              {isFront ? 'show back' : 'show front'}
+        <div className="practiceContainer_card">
+          <div className="practiceContainer_term">
+            {isFront ? term : definition}
+          </div>
+          <div className="practiceContainer_btns">
+            <button type="button" className="btn" onClick={this.handleCardFlip}>
+              {isFront ? 'Show back' : 'Show front'}
             </button>
             <div>
               <button
                 type="button"
-                className="secundary"
+                className="btn"
                 onClick={this.handlePrevCard}
               >
-                previous
+                Previous
               </button>
               <button
                 type="button"
-                className="primary"
+                className="btn"
                 onClick={this.handleNextCard}
               >
-                next
+                Next
               </button>
             </div>
           </div>

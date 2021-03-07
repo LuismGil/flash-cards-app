@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Router } from '@reach/router';
 import { Practice } from './components/Practice';
-import './App.css';
-
 import { getCards } from './services/cardService';
-
 import { CardList } from './components/CardList';
 
 function App() {
   const [cards, setCards] = useState([]);
+
   useEffect(() => {
     getCards().then(setCards);
   }, []);
@@ -27,13 +25,14 @@ function App() {
 
   return (
     <div>
-      <header>
-        <h1>
-          Flash <span className="titleHighlight">Cards</span>
-        </h1>
-        <h2>Retention through repitition</h2>
+      <header className="app_header">
+        <h1 className="app_header_title">Flash Cards</h1>
+        <h2 className="app_header_title-secundary">
+          Retention Through Repitition
+        </h2>
       </header>
       <main>
+        <h3 className="app_main_title">Your Cards</h3>
         <Router>
           <CardList
             path="/"

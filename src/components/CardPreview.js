@@ -31,22 +31,22 @@ export const View = ({ id, term, definition, onEdit, onRemove }) => {
   }
 
   return (
-    <div className={`tile ${isFront ? '' : 'back'}`}>
-      <h4 className="cardTerm">{isFront ? term : definition}</h4>
-      <div className="cardButtons">
-        <button type="button" className="tertiary" onClick={handleCardFlip}>
+    <div
+      className={`preview preview_front ${
+        isFront ? '' : 'preview preview_back'
+      }`}
+    >
+      <h4 className="preview_term">{isFront ? term : definition}</h4>
+      <div className="preview_btns">
+        <button type="button" className="btn" onClick={handleCardFlip}>
           {isFront ? 'Show back' : 'Show front'}
         </button>
         <div>
-          <button type="button" className="secondary" onClick={onEdit}>
-            edit
+          <button type="button" className="btn" onClick={onEdit}>
+            Edit
           </button>
-          <button
-            type="button"
-            className="secondary danger"
-            onClick={handleDelete}
-          >
-            delete
+          <button type="button" className="btn" onClick={handleDelete}>
+            Delete
           </button>
         </div>
       </div>

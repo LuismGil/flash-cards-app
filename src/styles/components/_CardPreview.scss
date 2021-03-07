@@ -1,0 +1,27 @@
+.preview {
+  height: 280px;
+  width: 300px;
+  margin: 10px auto;
+  color: $white;
+  border: 1px solid $blue;
+  padding: 5px;
+}
+
+.preview_front {
+  background-color: $black;
+}
+
+.preview_back {
+  background-color: darken($black, 5%);
+  height: 280px;
+}
+
+.preview_term {
+  height: 60%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.preview_btns {
+  text-align: center;
+}

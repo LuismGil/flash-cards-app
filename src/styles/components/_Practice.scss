@@ -1,0 +1,57 @@
+.practiceContainer {
+  text-align: center;
+}
+
+.practiceContainer_link {
+  background-color: $black;
+  border: none;
+  color: $black;
+  cursor: pointer;
+  font-size: 15px;
+  height: 18px;
+  margin: 0 auto;
+  outline: none;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100px;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $blue;
+  }
+}
+
+.practiceContainer_link-title {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+  }
+  &:visited {
+    color: none;
+  }
+}
+
+.practiceContainer_card {
+  background-color: $black;
+  border: 1px solid $blue;
+  color: $white;
+  height: 300px;
+  margin: 10px auto;
+  padding: 5px;
+  width: 300px;
+}
+
+.practiceContainer_term {
+  height: 60%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.practiceContainer_btns {
+  text-align: center;
+}

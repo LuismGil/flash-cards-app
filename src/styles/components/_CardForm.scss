@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form_title {
+  text-align: center;
+}
+
+.form_text {
+  width: 90%;
+  margin: 10px;
+
+  resize: none;
+}
+
+.form_text-title {
+  display: block;
+  margin: 0 auto;
+  color: $white;
+  text-align: center;
+}
+
+.btn_form {
+  margin: 10px auto;
+}
