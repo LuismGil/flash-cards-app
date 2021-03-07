@@ -3,9 +3,9 @@
 }
 
 .practiceContainer_link {
-  background-color: $black;
+  background-color: $color-primary;
   border: none;
-  color: $black;
+  color: $color-primary;
   cursor: pointer;
   font-size: 15px;
   height: 18px;
@@ -16,20 +16,20 @@
   width: 100px;
 
   &:hover {
-    background-color: $blue;
+    background-color: $color-secundary;
   }
 
   &:active {
-    background-color: $blue;
+    background-color: $color-secundary;
   }
 }
 
 .practiceContainer_link-title {
-  color: $white;
+  color: $color-white;
   text-decoration: none;
 
   &:hover {
-    color: $black;
+    color: $color-primary;
   }
   &:visited {
     color: none;
@@ -37,9 +37,9 @@
 }
 
 .practiceContainer_card {
-  background-color: $black;
-  border: 1px solid $blue;
-  color: $white;
+  background-color: $color-primary;
+  border: 1px solid $color-secundary;
+  color: $color-white;
   height: 300px;
   margin: 10px auto;
   padding: 5px;

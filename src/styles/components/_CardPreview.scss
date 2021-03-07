@@ -2,17 +2,17 @@
   height: 280px;
   width: 300px;
   margin: 10px auto;
-  color: $white;
-  border: 1px solid $blue;
+  color: $color-white;
+  border: 1px solid $color-secundary;
   padding: 5px;
 }
 
 .preview_front {
-  background-color: $black;
+  background-color: $color-primary;
 }
 
 .preview_back {
-  background-color: darken($black, 5%);
+  background-color: darken($color-primary, 5%);
   height: 280px;
 }
 

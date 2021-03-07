@@ -1,5 +1,27 @@
 // React Pallet
 
-$black: #222222;
-$blue: #00d8ff;
-$white: #ffffff;
+$color-primary: #222222;
+$color-secundary: #00d8ff;
+$color-white: #ffffff;
+$color-error: #da1b22;
+$color-background: mix($color-white, $color-primary, 95%) !default;
+$color-text: scale-color($color-background, $lightness: -65%) !default;
+
+$colors: (
+  'primary': $color-primary,
+  'secundary': $color-secundary,
+  'white': $color-white,
+  'error': $color-error,
+  'background': $color-background,
+  'text': $color-text,
+);
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+:root {
+  @each $key, $color in $colors {
+    --color-#{$key}: #{$color};
+  }
+}

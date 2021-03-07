@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 body {
-  background-color: $white;
+  background-color: var(--color-background, color('background'));
   font-family: 'Roboto', sans-serif;
+  color: var(--color-text, color('text'));
 }
 
 .btn {
-  background-color: $white;
+  background-color: $color-white;
   border: none;
   cursor: pointer;
   font-size: 15px;
@@ -15,10 +16,10 @@ body {
   width: 90px;
 
   &:hover {
-    background-color: $blue;
+    background-color: $color-secundary;
   }
 
   &:active {
-    background-color: $blue;
+    background-color: $color-secundary;
   }
 }
