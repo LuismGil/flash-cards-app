@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+import { Router } from '@reach/router';
+import { Practice } from './components/Practice';
 import './App.css';
 
 import { getCards } from './services/cardService';
@@ -33,12 +34,16 @@ function App() {
         <h2>Retention through repitition</h2>
       </header>
       <main>
-        <CardList
-          cards={cards}
-          onAdd={handleAdd}
-          onUpdate={handleUpdate}
-          onRemove={handleRemove}
-        />
+        <Router>
+          <CardList
+            path="/"
+            cards={cards}
+            onAdd={handleAdd}
+            onUpdate={handleUpdate}
+            onRemove={handleRemove}
+          />
+          <Practice path="/practice" cards={cards} />
+        </Router>
       </main>
     </div>
   );
