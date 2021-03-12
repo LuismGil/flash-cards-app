@@ -11,7 +11,7 @@ export function CardList({ cards, onAdd, onRemove, onUpdate }) {
           Practice Deck
         </Link>
       </div>
-      <div>
+      <div className="cardListContainer">
         <CardForm onSave={onAdd} />
         {cards.map(card => (
           <CardPreview

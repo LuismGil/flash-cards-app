@@ -1,0 +1,60 @@
+.cardListContainer {
+  margin: 50px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    'cardContainer1'
+    'cardContainer2'
+    'cardContainer3'
+    'cardContainer4'
+    'cardContainer5'
+    'cardContainer6'
+    'cardContainer7'
+    'cardContainer8'
+    'cardContainer9';
+}
+
+div:nth-of-type(1) {
+  grid-area: cardContainer1;
+}
+
+div:nth-of-type(2) {
+  grid-area: cardContainer2;
+}
+
+div:nth-of-type(3) {
+  grid-area: cardContainer3;
+}
+
+div:nth-of-type(4) {
+  grid-area: cardContainer4;
+}
+
+div:nth-of-type(5) {
+  grid-area: cardContainer5;
+}
+
+div:nth-of-type(6) {
+  grid-area: cardContainer6;
+}
+
+div:nth-of-type(7) {
+  grid-area: cardContainer7;
+}
+
+div:nth-of-type(8) {
+  grid-area: cardContainer8;
+}
+
+div:nth-of-type(9) {
+  grid-area: cardContainer9;
+}
+
+@media (min-width: 768px) {
+  .cardListContainer {
+    grid-template-areas:
+      'cardContainer1 cardContainer2 cardContainer3'
+      'cardContainer4 cardContainer5 cardContainer6'
+      'cardContainer7 cardContainer8 cardContainer9';
+  }
+}

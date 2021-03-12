@@ -7,7 +7,7 @@ body {
 }
 
 .btn {
-  background-color: $color-white;
+  background-color: color('white');
   border: none;
   cursor: pointer;
   font-size: 15px;
@@ -16,10 +16,20 @@ body {
   width: 90px;
 
   &:hover {
-    background-color: $color-secundary;
+    background-color: color('secundary');
   }
 
   &:active {
-    background-color: $color-secundary;
+    background-color: color('secundary');
+  }
+
+  &-danger {
+    &:hover {
+      background-color: color('error');
+    }
+
+    &:active {
+      background-color: color('error');
+    }
   }
 }

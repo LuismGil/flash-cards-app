@@ -45,6 +45,7 @@ export function CardForm({ onSave, onCancel, card }) {
           <textarea
             className="form_text"
             id={`card_term_${id ? id : 'new'}`}
+            name={`card_term_${id ? id : 'new'}`}
             value={term}
             onChange={handleTermChange}
           />
@@ -59,6 +60,7 @@ export function CardForm({ onSave, onCancel, card }) {
           <textarea
             className="form_text"
             id={`card_definition_${id ? id : 'new'}`}
+            name={`card_term_${id ? id : 'new'}`}
             value={definition}
             onChange={handleDefChange}
           />

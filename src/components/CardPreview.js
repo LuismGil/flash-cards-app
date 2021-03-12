@@ -45,7 +45,11 @@ export const View = ({ id, term, definition, onEdit, onRemove }) => {
           <button type="button" className="btn" onClick={onEdit}>
             Edit
           </button>
-          <button type="button" className="btn" onClick={handleDelete}>
+          <button
+            type="button"
+            className="btn btn-danger"
+            onClick={handleDelete}
+          >
             Delete
           </button>
         </div>
