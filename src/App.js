@@ -33,7 +33,7 @@ function App() {
       </header>
       <main>
         <h3 className="app_main_title">Your Cards</h3>
-        <Router>
+        <Router basename="/flash-cards-app">
           <CardList
             path="/"
             cards={cards}
