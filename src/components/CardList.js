@@ -7,7 +7,10 @@ export function CardList({ cards, onAdd, onRemove, onUpdate }) {
   return (
     <div>
       <div className="practiceContainer_link">
-        <Link className="practiceContainer_link-title" to="/practice">
+        <Link
+          className="practiceContainer_link-title"
+          to="/flash-cards-app/practice"
+        >
           Practice Deck
         </Link>
       </div>
