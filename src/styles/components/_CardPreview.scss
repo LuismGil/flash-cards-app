@@ -27,21 +27,8 @@
   }
 }
 
-// .preview_front {
-//   background-color: color('primary');
-// }
-
-// .preview_back {
-//   background-color: darken(color('primary'), 5%);
-//   height: 280px;
-// }
-
-// .preview_term {
-//   height: 60%;
-//   margin: 10px;
-//   padding: 10px;
-// }
-
-// .preview_btns {
-//   text-align: center;
-// }
+@media (min-width: 1200px) {
+  .preview {
+    width: 265px;
+  }
+}

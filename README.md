@@ -2,7 +2,7 @@ This project was created with [Create React App](https://github.com/facebook/cre
 
 ## Flash Cards App
 
-I developed this project to practice my knowledge with react hooks, and consume an api to get and store my content.
+I developed this project to practice my knowledge with react hooks, test, and consume an api to get and store my content.
 
 The main functionality of my project is to be able to create a flash card, where you can be adding new or editing information. You can also delete them. The most interesting thing is that when you have them all ready you can go to the practice section and read them one by one.
 
