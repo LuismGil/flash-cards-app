@@ -33,15 +33,15 @@ function App() {
       </header>
       <main>
         <h3 className="app_main_title">Your Cards</h3>
-        <Router basename="/flash-cards-app">
+        <Router>
           <CardList
-            path="/"
+            path="/flash-cards-app"
             cards={cards}
             onAdd={handleAdd}
             onUpdate={handleUpdate}
             onRemove={handleRemove}
           />
-          <Practice path="/practice" cards={cards} />
+          <Practice path="/flash-cards-app/practice" cards={cards} />
         </Router>
       </main>
     </div>
