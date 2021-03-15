@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Router } from '@reach/router';
 import { Practice } from './components/Practice';
 import { getCards } from './services/cardService';
 import { CardList } from './components/CardList';
@@ -41,7 +41,7 @@ function App() {
             onUpdate={handleUpdate}
             onRemove={handleRemove}
           />
-          <Practice path="/practice" cards={cards} />
+          <Practice path="/" cards={cards} />
         </Router>
       </main>
     </div>
