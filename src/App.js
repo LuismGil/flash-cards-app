@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Router } from '@reach/router';
+import { HashRouter as Router } from 'react-router-dom';
 import { Practice } from './components/Practice';
 import { getCards } from './services/cardService';
 import { CardList } from './components/CardList';
@@ -35,13 +35,13 @@ function App() {
         <h3 className="app_main_title">Your Cards</h3>
         <Router>
           <CardList
-            path="/flash-cards-app"
+            path="/"
             cards={cards}
             onAdd={handleAdd}
             onUpdate={handleUpdate}
             onRemove={handleRemove}
           />
-          <Practice path="/flash-cards-app/practice" cards={cards} />
+          <Practice path="/practice" cards={cards} />
         </Router>
       </main>
     </div>
