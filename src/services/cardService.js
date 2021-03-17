@@ -1,9 +1,9 @@
 export function getCards() {
-  return fetch('/api/card').then(res => res.json());
+  return fetch('/flash-cards-app/api/card').then(res => res.json());
 }
 
 export function destroyCard(id) {
-  return fetch(`/api/card/${id}`, { method: 'DELETE' });
+  return fetch(`/flash-cards-app/api/card/${id}`, { method: 'DELETE' });
 }
 
 export function saveCard(card) {
@@ -11,7 +11,7 @@ export function saveCard(card) {
 }
 
 export function createCard(card) {
-  return fetch('/api/card', {
+  return fetch('/flash-cards-app/api/card', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
@@ -21,7 +21,7 @@ export function createCard(card) {
 }
 
 function updateCard(card) {
-  return fetch(`/api/card/${card.id}`, {
+  return fetch(`/flash-cards-app/api/card/${card.id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json',
